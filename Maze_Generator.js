@@ -36,7 +36,7 @@ function setup() {
 
   currentCell = maze[int(random(numRows))][int(random(numColumns))];
   currentCell.isVisited = true;
-  visitedCellsStack.push(new Point(currentCell.x, currentCell.y)); //FIXME: the whole cell, or just the needed parts (namely the x and y)?
+  visitedCellsStack.push(new Point(currentCell.x, currentCell.y));
   if (visitedCellsStack.length == numRows * numColumns) {
     doneGenerating = true;
     MazeGraphic();
@@ -81,7 +81,7 @@ function draw() {
             nextCell.isWall[1] = false;
           }
         }
-        visitedCellsStack.push(new Point(nextCell.x, nextCell.y)); //FIXME: the whole cell, or just the needed parts (namely the x and y)?
+        visitedCellsStack.push(new Point(nextCell.x, nextCell.y));
         if (visitedCellsStack.length == numRows * numColumns) {
           doneGenerating = true;
           mazeGraphic.generate();
@@ -100,7 +100,7 @@ function draw() {
         } else if (currentCell.x - nextCell.x == -1) { //moving right
           nextCell.isWall[1] = false;
         }
-        visitedCellsStack.push(new Point(nextCell.x, nextCell.y)); //FIXME: the whole cell, or just the needed parts (namely the x and y)?
+        visitedCellsStack.push(new Point(nextCell.x, nextCell.y));
         if (visitedCellsStack.length >= int(difficulty * numRows * numColumns)) {
           randomWalk = false;
         }
