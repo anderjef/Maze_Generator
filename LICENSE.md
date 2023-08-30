@@ -2,7 +2,7 @@
 
 ## Copyright
 
-(c) © 2023 Jeffrey Andersen
+(c) 2023 Jeffrey Andersen
 
 ## Warranty
 
