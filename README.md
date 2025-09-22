@@ -11,22 +11,30 @@
     - [Programming language(s)](#programming-languages)
   - [Installation](#installation)
   - [Usage](#usage)
-    - [Invokation](#invokation)
+    - [Invocation](#invocation)
     - [Operation](#operation)
   - [Contributions](#contributions)
 
 ## Description
 
-This program generates a random maze by starting with a random walk until a set amount of time has elapsed, at which point the program continues the maze generation via depth-first backtracking. Longer configured generation times hence lead to harder mazes.  
-Start date: October 28, 2020  
+This program generates a random maze by starting with a random walk until a set fraction of cells have been visited, at which point the program continues the maze generation via depth-first backtracking. Higher configured difficulties cause harder mazes and longer generation times.  
+Start date: 2020-10-28  
 Current version: 0.1.0  
 
 ### Display
 
 #### Examples
 
+0%-difficulty:
+
 ![Example 0%-Difficulty Maze](Picture1.png)
+
+50%-difficulty:
+
 ![Example 50%-Difficulty Maze](Picture2.png)
+
+75%-difficulty:
+
 ![Example 75%-Difficulty Maze](Picture3.png)
 
 ### Folder structure
@@ -52,7 +60,7 @@ Current version: 0.1.0
 
 ## Usage
 
-### Invokation
+### Invocation
 
 1. Method 1&mdash;p5.js in web browser
     - Open <https://anderjef.github.io/Maze_Generator/>.
